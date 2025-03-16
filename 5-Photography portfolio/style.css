@@ -8,29 +8,27 @@
   color: white;
 }
 
-/* Gallery Section */
 .gallery-section .card {
   border: 1px solid #ddd;
   transition: transform 0.3s;
 }
+
 .gallery-section .card:hover {
   transform: scale(1.05);
 }
 
-/* About Section */
 .about-section {
   background-color: #f8f9fa;
 }
 
-/* Contact Section */
 .contact-section {
   background-color: #fff;
 }
 
-/* Footer */
 .footer {
   background-color: #343a40;
 }
+
 .footer .social-links a {
   text-decoration: none;
 }

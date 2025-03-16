@@ -1,13 +1,12 @@
-/* Body Padding to Avoid Navbar Overlap */
 body {
-  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+  padding-top: 56px;
 }
 
 #highlights {
-  position: relative; /* Required for pseudo-element positioning */
-  padding: 100px 0; /* Adds padding to the top and bottom */
-  color: #ffffff; /* White text for better contrast */
-  overflow: hidden; /* Ensures the blurred background doesn't overflow */
+  position: relative;
+  padding: 100px 0;
+  color: #ffffff;
+  overflow: hidden;
 }
 
 #highlights::before {
@@ -17,11 +16,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("background.jpg"); /* Add your background image */
-  background-size: cover; /* Ensures the background covers the entire section */
-  background-position: center; /* Centers the background image */
-  filter: blur(8px); /* Apply blur effect */
-  z-index: -1; /* Place the blurred background behind the content */
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
 }
 
 #highlights::after {
@@ -31,52 +30,51 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: -1; /* Place the overlay behind the content */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 #highlights .container {
-  position: relative; /* Ensures content is above the background */
-  z-index: 1; /* Places content above the pseudo-elements */
+  position: relative;
+  z-index: 1;
 }
 
 #highlights .text-center h5 {
   font-size: 20px;
   margin-bottom: 15px;
-  font-weight: bold; /* Makes the text bold */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the text for better readability */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #highlights .btn-primary {
-  background-color: #227eff; /* Orange button */
-  color: #ffffff; /* White text */
+  background-color: #227eff;
+  color: #ffffff;
   font-size: 18px;
   padding: 10px 30px;
   border: none;
   border-radius: 50px;
-  transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 #highlights .btn-primary:hover {
-  background-color: #0654b3; /* Darker orange on hover */
-  transform: scale(1.05); /* Slightly enlarges the button on hover */
+  background-color: #0654b3;
+  transform: scale(1.05);
 }
 
-/* Scroll Margin for Sections */
 section {
-  scroll-margin-top: 40px; /* Adjust this value based on the height of your navbar */
+  scroll-margin-top: 40px;
 }
 
 .hero-text h5 {
   font-size: 20px;
   margin-bottom: 15px;
-  font-weight: bold; /* Makes the text bold */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the text for better readability */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn-hero {
-  background-color: #ff5722; /* Orange button */
-  color: #ffffff; /* White text */
+  background-color: #ff5722;
+  color: #ffffff;
   font-size: 18px;
   padding: 10px 30px;
   border: none;
@@ -85,121 +83,118 @@ section {
 }
 
 .btn-hero:hover {
-  background-color: #e64a19; /* Darker orange on hover */
+  background-color: #e64a19;
 }
 
-/* Carousel Image Sizing */
 .carousel-item img {
-  height: 500px; /* Fixed height for all carousel images */
-  width: 100%; /* Full width */
-  object-fit: contain; /* Ensures images fit inside the carousel without cropping */
+  height: 500px;
+  width: 100%;
+  object-fit: contain;
 }
 
-/* Video Section */
 .video-container {
-  width: 100%; /* Full width */
-  height: 400px; /* Fixed height for the video container */
-  overflow: hidden; /* Ensures no overflow */
-  position: relative; /* Required for absolute positioning of the video */
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
 }
 
 .video-container video {
-  width: 100%; /* Full width */
-  height: 100%; /* Full height of the container */
-  object-fit: cover; /* Ensures the video covers the container */
-  object-position: center; /* Ensures the middle of the video is always visible */
-  position: absolute; /* Positions the video absolutely within the container */
-  top: 50%; /* Centers the video vertically */
-  left: 50%; /* Centers the video horizontally */
-  transform: translate(-50%, -50%); /* Adjusts the video to center perfectly */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #features {
-  background-color: #d1fffd; /* Bright red background */
+  background-color: #d1fffd;
   padding: 50px 0;
 }
 
 #features .card {
-  border: 1px double #d70808; /* Light gray border */
-  border-radius: 10px; /* Rounded corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-  overflow: hidden; /* Ensures content doesn't overflow during zoom */
+  border: 1px double #d70808;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 #features .card:hover {
-  transform: scale(1.05); /* Zoom in effect */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-  border-color: #007bff; /* Change border color on hover (optional) */
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
 }
+
 #features .card-body {
-  background-color: #1d3645; /* Light blue background */
-  padding: 20px; /* Add padding for spacing */
-  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
-}
-#features .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-  overflow: hidden; /* Ensures content doesn't overflow during zoom */
+  background-color: #1d3645;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
 }
 
 #features .card-img-top {
-  transition: transform 0.3s ease; /* Smooth transition for image */
+  transition: transform 0.3s ease;
 }
 
 #features .card:hover .card-img-top {
-  transform: scale(1); /* Keep the image static (no zoom) */
+  transform: scale(1);
 }
-/* Testimonials Section */
+
 #testimonials {
   background-color: #d1fffd;
 }
+
 .testimonials-section {
-  background-color: #1a1a1a; /* Dark background */
-  color: #ed0000; /* White text */
-  padding: 50px 0; /* Adds padding */
+  background-color: #1a1a1a;
+  color: #ed0000;
+  padding: 50px 0;
 }
 
 .testimonials-section h2 {
   font-size: 32px;
-  text-align: center; /* Center the heading */
+  text-align: center;
 }
+
 #testimonials .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   border: none;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #1d3645; /* Default background color */
+  background-color: #1d3645;
 }
 
 #testimonials .card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #123c65; /* Light gray background on hover */
+  background-color: #123c65;
 }
 
 .card {
-  background-color: #1d3645; /* Dark card background */
-  color: #ffffff; /* White text */
+  background-color: #1d3645;
+  color: #ffffff;
 }
 
 .card-text {
   font-style: italic;
 }
+
 cite {
   font-weight: bold;
-  color: #a6d0ff; /* Orange text */
+  color: #a6d0ff;
 }
 
-/* Footer */
 #contact {
   background-color: #1d3645;
   color: white;
 }
+
 .footer {
-  background-color: #1a1a1a; /* Dark background */
-  color: #ffffff; /* White text */
-  padding: 20px 0; /* Adds padding */
-  text-align: center; /* Center text */
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .footer h5 {
@@ -209,10 +204,10 @@ cite {
 .social-links a {
   text-decoration: none;
   font-size: 18px;
-  color: #ffffff; /* White text */
+  color: #ffffff;
   transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: #ff5722; /* Orange text on hover */
+  color: #ff5722;
 }
