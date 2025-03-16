@@ -1,0 +1,134 @@
+ /* Header Styles */
+     
+ body{
+  background-color: rgb(183, 183, 183);
+ }
+ header {
+        background-color: #000;
+        padding: 100px 20px 20px; /* Adjusted padding-top for fixed navbar */
+        color: white;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #1d1d1f;
+        padding: 20px 0; /* Increased navbar height */
+      }
+      .navbar-brand {
+        font-size: 1.5rem; /* Larger font size for the title */
+        font-weight: bold;
+        color: #fff !important; /* Ensure the title is white */
+      }
+      .navbar-nav {
+        font-size: 1.1rem; /* Slightly larger font size for links */
+      }
+      .navbar a {
+        color: #fff;
+      }
+      .navbar a:hover {
+        color: #007aff;
+      }
+
+      /* Scroll Padding for Sections */
+      html {
+        scroll-padding-top: 100px; /* Adjust this value based on navbar height */
+      }
+
+      /* Main Content Styles */
+      .blog-post {
+        margin-bottom: 30px;
+      }
+      .blog-post h2 {
+        color: #1d1d1f;
+        font-family: "Georgia", serif;
+      }
+      .blog-post p {
+        color: #333;
+        font-family: "Arial", sans-serif;
+      }
+      .blog-post .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Sidebar Styles */
+      .sidebar {
+        background-color: #f5f5f7;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .sidebar h3 {
+        color: #1d1d1f;
+        margin-bottom: 15px;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        margin-bottom: 10px;
+      }
+      .sidebar ul li a {
+        color: #007aff;
+        text-decoration: none;
+      }
+      .sidebar ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Search Bar Styles */
+      .search-bar input[type="text"] {
+        background-color: #ffffff;
+        border: 2px solid #007aff;
+        border-radius: 5px;
+        padding: 10px;
+        color: #1d1d1f;
+        font-family: "Arial", sans-serif;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .search-bar input[type="text"]:focus {
+        outline: none;
+        border-color: #005bb5;
+        box-shadow: 0 2px 8px rgba(0, 122, 255, 0.2);
+      }
+
+      /* Sidebar Sections */
+      .sidebar-section {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .sidebar-section:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: #1d1d1f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      footer a {
+        color: #007aff;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Remove Extra Padding for Sections */
+      #buying-guide,
+      #latest-reviews {
+        padding-top: 0; /* Remove extra padding */
+      }

@@ -1,0 +1,218 @@
+/* Body Padding to Avoid Navbar Overlap */
+body {
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+#highlights {
+  position: relative; /* Required for pseudo-element positioning */
+  padding: 100px 0; /* Adds padding to the top and bottom */
+  color: #ffffff; /* White text for better contrast */
+  overflow: hidden; /* Ensures the blurred background doesn't overflow */
+}
+
+#highlights::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("background.jpg"); /* Add your background image */
+  background-size: cover; /* Ensures the background covers the entire section */
+  background-position: center; /* Centers the background image */
+  filter: blur(8px); /* Apply blur effect */
+  z-index: -1; /* Place the blurred background behind the content */
+}
+
+#highlights::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1; /* Place the overlay behind the content */
+}
+
+#highlights .container {
+  position: relative; /* Ensures content is above the background */
+  z-index: 1; /* Places content above the pseudo-elements */
+}
+
+#highlights .text-center h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold; /* Makes the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the text for better readability */
+}
+
+#highlights .btn-primary {
+  background-color: #227eff; /* Orange button */
+  color: #ffffff; /* White text */
+  font-size: 18px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+#highlights .btn-primary:hover {
+  background-color: #0654b3; /* Darker orange on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Scroll Margin for Sections */
+section {
+  scroll-margin-top: 40px; /* Adjust this value based on the height of your navbar */
+}
+
+.hero-text h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold; /* Makes the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the text for better readability */
+}
+
+.btn-hero {
+  background-color: #ff5722; /* Orange button */
+  color: #ffffff; /* White text */
+  font-size: 18px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Carousel Image Sizing */
+.carousel-item img {
+  height: 500px; /* Fixed height for all carousel images */
+  width: 100%; /* Full width */
+  object-fit: contain; /* Ensures images fit inside the carousel without cropping */
+}
+
+/* Video Section */
+.video-container {
+  width: 100%; /* Full width */
+  height: 400px; /* Fixed height for the video container */
+  overflow: hidden; /* Ensures no overflow */
+  position: relative; /* Required for absolute positioning of the video */
+}
+
+.video-container video {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Ensures the video covers the container */
+  object-position: center; /* Ensures the middle of the video is always visible */
+  position: absolute; /* Positions the video absolutely within the container */
+  top: 50%; /* Centers the video vertically */
+  left: 50%; /* Centers the video horizontally */
+  transform: translate(-50%, -50%); /* Adjusts the video to center perfectly */
+}
+
+#features {
+  background-color: #d1fffd; /* Bright red background */
+  padding: 50px 0;
+}
+
+#features .card {
+  border: 1px double #d70808; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+  overflow: hidden; /* Ensures content doesn't overflow during zoom */
+}
+
+#features .card:hover {
+  transform: scale(1.05); /* Zoom in effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  border-color: #007bff; /* Change border color on hover (optional) */
+}
+#features .card-body {
+  background-color: #1d3645; /* Light blue background */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+}
+#features .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+  overflow: hidden; /* Ensures content doesn't overflow during zoom */
+}
+
+#features .card-img-top {
+  transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+#features .card:hover .card-img-top {
+  transform: scale(1); /* Keep the image static (no zoom) */
+}
+/* Testimonials Section */
+#testimonials {
+  background-color: #d1fffd;
+}
+.testimonials-section {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ed0000; /* White text */
+  padding: 50px 0; /* Adds padding */
+}
+
+.testimonials-section h2 {
+  font-size: 32px;
+  text-align: center; /* Center the heading */
+}
+#testimonials .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1d3645; /* Default background color */
+}
+
+#testimonials .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #123c65; /* Light gray background on hover */
+}
+
+.card {
+  background-color: #1d3645; /* Dark card background */
+  color: #ffffff; /* White text */
+}
+
+.card-text {
+  font-style: italic;
+}
+cite {
+  font-weight: bold;
+  color: #a6d0ff; /* Orange text */
+}
+
+/* Footer */
+#contact {
+  background-color: #1d3645;
+  color: white;
+}
+.footer {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px 0; /* Adds padding */
+  text-align: center; /* Center text */
+}
+
+.footer h5 {
+  font-size: 24px;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff; /* White text */
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff5722; /* Orange text on hover */
+}
